@@ -7,7 +7,7 @@ The server calculate factorial of a number and return the result.
 ## How to run the application
 1. Clone the repository
 ```bash
-git clone ... \ 
+git clone https://github.com/Nikolay200669/go-ks.git \ 
 cd go-ks
 ```
 
