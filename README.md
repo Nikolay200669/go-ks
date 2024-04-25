@@ -11,7 +11,7 @@ git clone https://github.com/Nikolay200669/go-ks.git && \
 cd go-ks
 ```
 
-1. Run the following command to start the server:
+2. Run the following command to start the server:
 ```bash
 go run main.go
 ```
@@ -23,7 +23,7 @@ curl -X POST http://localhost:8989/calculate \
 ```
 
 ### Or
-1. Use integration test:
+3. Use integration test:
 ```bash
 go test -v
 ```
