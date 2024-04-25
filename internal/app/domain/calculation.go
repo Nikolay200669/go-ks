@@ -8,4 +8,5 @@ type CalculationRequest struct {
 type CalculationResponse struct {
 	FactorialA uint64 `json:"factorialA"`
 	FactorialB uint64 `json:"factorialB"`
+	_          struct{}
 }
