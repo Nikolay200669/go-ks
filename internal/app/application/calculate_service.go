@@ -5,12 +5,9 @@ import "github.com/Nikolay200669/go-ks/internal/app/domain"
 type CalculateService struct{}
 
 func (s *CalculateService) CalculateFactorials(request domain.CalculationRequest) domain.CalculationResponse {
-	factorialA := factorial(request.A)
-	factorialB := factorial(request.B)
-
 	return domain.CalculationResponse{
-		FactorialA: factorialA,
-		FactorialB: factorialB,
+		FactorialA: factorial(request.A),
+		FactorialB: factorial(request.B),
 	}
 }
 
