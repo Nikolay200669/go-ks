@@ -55,3 +55,4 @@ docker run go-ks
 - [ ] Use environment variables
 - [ ] Refactor struct response
 - [ ] Graceful shutdown
+- [x] ~~Add GitHub Actions~~
