@@ -42,7 +42,7 @@ ok      github.com/Nikolay200669/go-ks  0.335s
 
 ### Or
 
-1. Run Docker:
+4. Run Docker:
 ```bash
 docker build -t go-ks . && \
 docker run go-ks
