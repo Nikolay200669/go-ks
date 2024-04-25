@@ -31,11 +31,14 @@ go test -v
 output should be:
 ```txt
 === RUN   TestCalcHandler
-=== RUN   TestCalcHandler/TestCalcHandler
+=== RUN   TestCalcHandler/Run_test_OK
+=== RUN   TestCalcHandler/Run_test_middleware
 --- PASS: TestCalcHandler (0.00s)
-    --- PASS: TestCalcHandler/TestCalcHandler (0.00s)
+    --- PASS: TestCalcHandler/Run_test_OK (0.00s)
+    --- PASS: TestCalcHandler/Run_test_middleware (0.00s)
 PASS
-ok      github.com/Nikolay200669/go-ks  0.343s
+ok      github.com/Nikolay200669/go-ks  0.335s
+
 ```
 
 ### Or
