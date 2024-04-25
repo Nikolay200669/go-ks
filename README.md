@@ -50,7 +50,7 @@ docker run go-ks
 
 ### TODO:
 - [ ] Add unit tests
-- [ ] Refactor for use better practices (structs, interfaces, etc...)
+- [x] ~~Refactor for use better practices (structs, interfaces, etc...)~~
 - [ ] Logging
 - [ ] Use environment variables
 - [ ] Refactor struct response
