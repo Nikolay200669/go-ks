@@ -25,7 +25,7 @@ curl -X POST http://localhost:8989/calculate \
 ### Or
 3. Use integration test:
 ```bash
-go test -v
+go test -v ./...
 ```
 output should be:
 ```txt
