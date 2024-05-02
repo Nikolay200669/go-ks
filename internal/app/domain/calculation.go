@@ -1,12 +1,14 @@
 package domain
 
+import "math/big"
+
 type CalculationRequest struct {
-	A uint64 `json:"a"`
-	B uint64 `json:"b"`
+	A int `json:"a"`
+	B int `json:"b"`
 }
 
 type CalculationResponse struct {
-	FactorialA uint64 `json:"factorialA"`
-	FactorialB uint64 `json:"factorialB"`
+	FactorialA *big.Int `json:"factorialA"`
+	FactorialB *big.Int `json:"factorialB"`
 	_          struct{}
 }

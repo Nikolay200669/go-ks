@@ -62,6 +62,6 @@ func TestCalcHandler(t *testing.T) {
 		mw(rr, req, httprouter.Params{})
 
 		require.Equal(t, http.StatusBadRequest, rr.Code)
-		assert.Equal(t, "json: cannot unmarshal string into Go struct field CalculationRequest.a of type uint64\n", rr.Body.String())
+		assert.Equal(t, "json: cannot unmarshal string into Go struct field CalculationRequest.a of type int\n", rr.Body.String())
 	})
 }

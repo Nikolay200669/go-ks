@@ -1,6 +1,10 @@
 package application
 
-import "github.com/Nikolay200669/go-ks/internal/app/domain"
+import (
+	"math/big"
+
+	"github.com/Nikolay200669/go-ks/internal/app/domain"
+)
 
 type CalculateService struct{}
 
@@ -11,9 +15,10 @@ func (s *CalculateService) CalculateFactorials(request domain.CalculationRequest
 	}
 }
 
-func factorial(n uint64) uint64 {
-	if n == 0 {
-		return 1
+func factorial(n int) *big.Int {
+	result := big.NewInt(1)
+	for i := 2; i <= n; i++ {
+		result.Mul(result, big.NewInt(int64(i)))
 	}
-	return n * factorial(n-1)
+	return result
 }
